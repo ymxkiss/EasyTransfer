@@ -4,11 +4,11 @@ permissions:
   contents: read
   packages: write
 
+
 on:
   workflow_dispatch:
   push:
-    tags:
-      - client/**
+    - client/**
 
 env:
   REGISTRY: ghcr.io
